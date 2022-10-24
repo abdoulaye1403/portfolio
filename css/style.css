@@ -1,0 +1,36 @@
+body{
+               margin: 0;
+               padding: 0;
+               height: 100%;
+               font-family: 'Times New Roman', Times, serif;
+               border: 5px solid;
+               background-color: beige;
+}
+
+h1,h2{
+               text-align: center;
+               
+}
+h2{
+               background-color: yellowgreen;
+               
+}
+
+h1{
+               text-shadow: 3px 2px;
+}
+
+p img{
+               height: 175px;
+               position: absolute;
+               top: 30px;
+               left: 10px;    
+               border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;       
+}
+
+p a{
+               text-decoration: none;
+}
+li{
+               list-style-type: none;
+}

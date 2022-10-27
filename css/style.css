@@ -15,6 +15,25 @@ body{
                background-image: url('../images/greyzz.png');             
 }
 
+.header{
+    display: inline-block;
+    
+    
+}
+
+.hero .hero_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+
+.header .content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 
 
 h1,h2{
@@ -23,70 +42,32 @@ h1,h2{
                
 }
 
-h1,h2{
-               text-align: center;
-               
-               
-}
+
 h2{
                
                color: #6E4A46;
                
 }
-p{
-               text-align: center;
-}
-#liseret p{
-        color: white;
-}
 
 
 
- img{
+
+.hero  #hero_image{
                
-               position: relative;
-               top: right;
+               
+               width: 160px;
+               height: 120px;
                border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;       
 }
 
-p a{
-               text-decoration: none;
-}
+
 li{
                list-style-type: none;
 }
 
-section
-{
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 2%;
-}
-
-#liseret, #contenu
-{
-    display: inline-block;
-    vertical-align: top;
-    
-}
 
 
 
-#liseret
-{   
-    width: 15%;
-    margin-right: 3%;
-    height: 55em;
-    background-image: url('../images/lodyas.png');
-    border-radius: 10px;
-    
-}
-
-#contenu
-{
-    width: 80%;
-}
 
 @media all and (max-width: 1024px)
 {

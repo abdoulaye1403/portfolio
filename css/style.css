@@ -9,62 +9,71 @@
     font-weight: normal;
     font-style: normal;
 }
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body{
-    margin-left: 400px;
-    margin-right: 400px;
+              color: #707070;
+              font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
                background-image: url('../images/greyzz.png');             
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
 }
 
 .header{
-    display: block;
-    
-    
+    display: inline-block;
+    padding: 10px;   
 }
-
-
 
 .hero .hero_header{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-    
-   
-   
+    align-items: center; 
 }
 .hero_header  img{        
     width: 160px;
     height: 120px;
-    padding: 15px;
+   margin-right: 20px;
     border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;       
+}
+#hero_title{
+    font-size: 50px;
+    margin-bottom: 10px;
 }
 
 .header .content{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 .hero_header div p span{
-    background-color: rgb(10, 97, 220);
+    background-color: rgb(90, 154, 243);
     color: white;
-    padding: 10px;
-    border-radius: 15px;
+    padding: 5px;
+    
+    border-radius: 10px;
+
 }
 
 .hero #paragraphe{
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 2px;
+    margin: 20px;
 }
-
-
+.hero_header a{
+    text-decoration: none;
+    color: #707070;
+    margin-right: 10px;
+}
 h1,h2{
                font-family: 'droid_sansregular', 'Arial', sans-serif;
                
                
 }
-
 
 h2{
                
@@ -72,40 +81,70 @@ h2{
                
 }
 
-
-
-
-
-
-
 li{
                list-style-type: none;
 }
 .liste-conpetence{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 20px;
     
     
 }
-.contenu .github{
+.github{
     display: flex;
     align-items: center;
-    border: 1px solid;
+    padding: 10px;
+    border: 1px solid #707070;
+    border-radius: 10px;
     width: 45%;
-    padding: 12px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
-.contenu .liste-conpetence #color-css{
-    background-color: rgb(131, 131, 196);
+.liste-conpetence #color-css{
     display: flex;
     align-items: center;
-    border: 1px solid;
+    padding: 10px;
+    border: 1px solid #707070;
+    border-radius: 10px;
     width: 45%;
-    padding: 12px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
+#color-css .pourcent{
+    font-size: 60px;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.github .pourcent{
+    font-size: 60px;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.listes-langues{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.listes-langues img{
+    width: 30%;
+    padding: 8px;
+}
+.listes-langues div{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+
 
 
 

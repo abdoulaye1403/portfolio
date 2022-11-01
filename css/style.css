@@ -17,7 +17,7 @@
 body{
               color: #707070;
               font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-               background-image: url('../images/greyzz.png');             
+              /* background-image: url('../images/greyzz.png');   */          
 }
 .container {
     max-width: 800px;
@@ -84,10 +84,13 @@ h2{
 li{
                list-style-type: none;
 }
+.contenu h2{
+    padding-bottom: 20px;
+}
 .liste-conpetence{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
     margin-top: 20px;
     
     
@@ -100,7 +103,8 @@ li{
     border-radius: 10px;
     width: 45%;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
+    
 }
 
 .liste-conpetence #color-css{
@@ -111,6 +115,7 @@ li{
     border-radius: 10px;
     width: 45%;
     margin-top: 10px;
+    margin-right: 20px;
 }
 #color-css .pourcent{
     font-size: 60px;
@@ -125,34 +130,57 @@ li{
     margin-left: 10px;
     margin-right: 10px;
 }
+.liste-conpetence .github:hover,#color-css:hover,
+.listes-langues div:hover {
+    border: none;
+    background-color: #ACC2EA;
+    color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.langues h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.langues p{
+    padding-bottom: 15px;
+}
 
 .listes-langues{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    
 }
 
 .listes-langues img{
-    width: 30%;
-    padding: 8px;
+    width: 50%;
+    padding: 7px;
+    
 }
 .listes-langues div{
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 95%;
     border: 1px solid;
     padding: 8px;
     border-radius: 7px;
+}
+.experiences h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .experience-liste{
     display: flex;
     justify-content: start;
+    
     align-items: center;
+    
 }
 .experience-liste .parcours{
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 40px auto;
 }
 
 .parcours .entete{
@@ -163,7 +191,7 @@ li{
     margin-bottom: 10px;
 }
 .entete .point{
-    display: inline-block;
+    display: block;
     width: 20px;
     height: 20px;
     border: 1px solid;
@@ -175,9 +203,15 @@ li{
 .entete .ligne{
     display: inline-block;
     margin-top: 10px;
-    width: 250px;
+    width: 130px;
     height: 2px;
     background-color: #707070;
+}
+
+.parcours .entete .point:hover,
+.parcours .entete .ligne:hover{
+    background-color: #448E1D;
+    color: #448E1D;
 }
 
 .form{
@@ -303,6 +337,293 @@ li{
     font-weight: 300;
 }
 
+@media all and (min-width: 280px) and (max-width: 576px) 
+{
+    
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        
+    }
+    .hero .hero_header{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .contenu #parag{
+        font-size: 15px;
+    }
+    .liste-conpetence{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .github{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 10px;  
+    }
+    .liste-conpetence #color-css{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .listes-langues{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+    }
+
+    .listes-langues div{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+    }
+    .experience-liste{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    .entete .ligne{
+        display: inline-block;
+        margin-top: 10px;
+       
+        height: 2px;
+        background-color: #707070;
+    }
+    .form-groupe .form-row{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;  
+    }
+    .form-row .nom{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-option{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .form-option .object{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 100%;
+    }
+    .copyright {
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 200;
+    }
+}
+
+@media all and (min-width: 576px) and (max-width: 900px) 
+{
+    
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        
+    }
+    .hero .hero_header{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .liste-conpetence{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .github{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 10px;  
+    }
+    .liste-conpetence #color-css{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .listes-langues{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+    }
+
+    .listes-langues div{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+    }
+    .experience-liste{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    .entete .ligne{
+        display: inline-block;
+        margin-top: 10px;
+       
+        height: 2px;
+        background-color: #707070;
+    }
+    .form-groupe .form-row{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;  
+    }
+    .form-row .nom{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-option{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .form-option .object{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 100%;
+    }
+    .copyright {
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 200;
+    }
+}
+
+@media all and (min-width: 900px) and (max-width: 1024px)
+{
+    
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        
+    }
+    .hero .hero_header{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .liste-conpetence{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .github{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 10px;  
+    }
+    .liste-conpetence #color-css{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .listes-langues{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+    }
+
+    .listes-langues div{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+    }
+    .experience-liste{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    .entete .ligne{
+        display: inline-block;
+        margin-top: 10px;
+       
+        height: 2px;
+        background-color: #707070;
+    }
+    .form-groupe .form-row{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;  
+    }
+    .form-row .nom{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-option{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .form-option .object{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 100%;
+    }
+    .copyright {
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 200;
+    }
+}
 
 
 

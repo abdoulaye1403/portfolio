@@ -35,10 +35,13 @@ body{
     align-items: center; 
 }
 .hero_header  img{        
-    width: 160px;
+    width: 120px;
     height: 120px;
-   margin-right: 20px;
-    border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;       
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 25px;
+    box-shadow: 0px 12px 6px rgba(0, 0, 0, 0.16);
+    
 }
 #hero_title{
     font-size: 50px;

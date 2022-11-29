@@ -1,0 +1,68 @@
+{
+               "profile" : {
+                   "photo_profil" : "./images/blo.jpg",
+                   "nom" : "Abdoulaye Toure",
+                   "email" : "abdelraul17@yahoo.fr",
+                   "profil" : "Developpeur",
+                   "description" : "Je suis développeur et j'aime apprendre et partager mes connaissances aux autres",
+                   "numero" : "0022378119788",
+                   "github" : "https://github.com/abdoulaye1403"
+               },
+               "competences" : [
+                   {
+                       "name" : "Github",
+                       "description" : "Gérer les différentes versions de mes projets",
+                       "progress" : "30%"
+                   },
+                   {
+                       "name" : "HTML",
+                       "description" : "Créer des pages web avec des balises",
+                       "progress" : "70%"
+                   },
+                   {
+                       "name" : "CSS",
+                       "description" : "embellir mes pages web avec des styles",
+                       "progress" : "60%"
+                   }
+               ],
+               "langues" : [
+                   {
+                       "name" : "Anglais",
+                       "flag" : "images/us.png",
+                       "alt" : "drapeau americain"
+                   },
+                   {
+                       "name" : "Français",
+                       "flag" : "images/frflag.png",
+                       "alt": "drapeau Français"
+                   },
+                   {
+                       "name" : "Lingala",
+                       "flag" : "images/cd.png",
+                       "alt" :"drapeau Congolais"
+                   },
+                   {
+                       "name" : "Swahili",
+                       "flag" : "images/cd.png",
+                       "alt" :"drapeau congolais"
+                   }
+               ],
+               "experiences" : [
+                   {
+                       "year" : "2018",
+                       "role" : "Étudiant"
+                   },
+                   {
+                       "year" : "2020",
+                       "role" : "Développeur"
+                   },
+                   {
+                       "year" : "2022",
+                       "role" : "Entrepreneur"
+                   },
+                   {
+                       "year" : "2025",
+                       "role" : "Professeur"
+                   }
+               ]
+           }

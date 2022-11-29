@@ -67,7 +67,7 @@ body{
     padding-right: 15px;
     margin: 20px;
 }
-.hero_header a{
+.hero_header .hero_email{
     text-decoration: none;
     color: #707070;
     margin-right: 10px;

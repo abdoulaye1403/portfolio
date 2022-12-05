@@ -4,11 +4,12 @@
         <meta charset="utf-8" />
         <title>CV</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
 
     <body>
-        <div class="container">
-            <div class="header">
+        <div class="container py-5">
+            <div class="header container">
                 <section class="hero">
                     <div class="hero_header">
                         <img src="" alt="Photo_profile" id="hero_image"/>
@@ -20,55 +21,54 @@
                     
                     <p id="paragraphe"></p>
                 </section>
-                <section class="content">
+                <section class="content d-flex justify-content-between align-items-center mb-3">
                     <p ><a href="" class="numero"></a></p>
-                    <p ><a href=""  target="_blank" class="hero_github">Voir sur GitHub</a></p>
+                    <p ><a href=""  target="_blank" class="hero_github"></a></p>
                 </section>        
             </div>
     
             <div class="contenu">
                 <section>
-                    <h2>Mes compétences</h2>
-                    <p id="parag">Dans mon parcours en tant que developpeur, j'ai acquis plusieurs competences, en voici quelques unes:</p>
-                    <div class="liste-conpetence">
-                        <div class="github">
-                            <span class="pourcent">
-                              30%
-                            </span>
-                            <div class="description">
-                                <h3>GitHub</h3>
-                                <p>Gerer des differents versions de mes pages</p>
-                            </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h2>Mes compétences</h2>
+                        <button id="addButtonCompetence" class="btn btn-primary">ajouterCompetence</button>
+                    </div>
+                    
+                    <div class="competences">
+                        <div class="liste-competence row mt-3" id="liste-competence">
+                            
                         </div>
-                        <div class="github">
-                            <span  class="pourcent">
-                              70%
-                            </span>
-                            <div class="description">
-                                <h3>HTML5</h3>
-                                <p>Creer des pages web avec des balises</p>
+                    </div>
+                    
+                    <div id="form-section-competence" class="mb-3 d-none">
+                        <form action="" id="competenceForm">
+                            <div class="form-row row">
+                                <div class="form-group mb-3 col-6">
+                                  <label for="pourcent">Pourcentage</label>
+                                  <input type="number" id="pourcent" name="pourcent" class="form-control" placeholder="pourcent">
+                                </div>
+                                <div class="form-group mb-3 col-6">
+                                    <label for="title">Titre</label>
+                                    <input type="text" id="title" name="title" class="form-control" placeholder="title">
+                                </div>
+                                <div class="form-group mb-3 col-6">
+                                    <label for="description">Description</label>
+                                    <input type="text" id="description" name="description" class="form-control" placeholder="description">
+                                </div>
                             </div>
-                        </div>
-    
-                        <div id="color-css">
-                            <span class="pourcent">
-                              60%
-                            </span>
-                            <div class="description">
-                                <h3>CSS3</h3>
-                                <p>Embelir mes pages webs avec du style</p>
-                            </div>
-                        </div>
+                             <button type="submit" class="btn btn-primary">Ajouter</button>
+                        </form>
                     </div>
                     
                 </section>
     
                 <section>
-                    <div class="langues">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
                         <h2>Langues</h2>
-                        <p>je parle, écris et comprends les langues suivantes :</p>
-                        <div class="listes-langues">
-                            <div>
+                        <button id="addButtonLangue" class="btn btn-primary">ajouterLangue</button>
+                    </div>
+                    <div class="listes-langues" id="listes-langues">
+                            <!-- <div>
                                 <img src="./images/mali.png" alt="drapeau-mali" class="drapeau-mali">
                                 <span>Sonrhai</span>
                             </div>
@@ -83,9 +83,22 @@
                             <div>
                                 <img src="./images/us.png" alt="drapeau-mali">
                                 <span>Anglais</span>
-                            </div>
-                        </div>
+                            </div> -->
                     </div>
+
+                    <div id="form-section-langue" class="mb-3 d-none">
+                        <form action="" id="langueForm">
+                            <div class="form-row row">
+                                <div class="form-group mb-3 col-6">
+                                  <input type="" name="image" id="image" class="form-control" placeholder="image">
+                                  <input type="text" id="langue" name="langue" class="form-control" placeholder="langue">
+                                </div>
+        
+                            </div>
+                             <button type="submit" class="btn btn-primary">Ajouter</button>
+                        </form>
+                    </div>
+                    
                 </section>
                 <section>
                     <div class="experiences">
@@ -182,6 +195,8 @@
             </div>
            
         </div>
-        <script src="js/script.js"></script>        
+        
+        
+        <script src="./js/script.js"></script>        
     </body>
 </html>

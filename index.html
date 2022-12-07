@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <title>CV</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     </head>
 
     <body>
@@ -68,30 +69,25 @@
                         <button id="addButtonLangue" class="btn btn-primary">ajouterLangue</button>
                     </div>
                     <div class="listes-langues" id="listes-langues">
-                            <!-- <div>
-                                <img src="./images/mali.png" alt="drapeau-mali" class="drapeau-mali">
-                                <span>Sonrhai</span>
-                            </div>
-                            <div>
-                                <img src="./images/mali.png" alt="drapeau-mali" class="drapeau-mali">
-                                <span>Bamanan</span>
-                            </div>
-                            <div>
-                                <img src="./images/frflag.png" alt="drapeau-mali">
-                                <span>Français</span>
-                            </div>
-                            <div>
-                                <img src="./images/us.png" alt="drapeau-mali">
-                                <span>Anglais</span>
-                            </div> -->
+                            
+                        
+          
                     </div>
 
                     <div id="form-section-langue" class="mb-3 d-none">
                         <form action="" id="langueForm">
                             <div class="form-row row">
                                 <div class="form-group mb-3 col-6">
-                                  <input type="" name="image" id="image" class="form-control" placeholder="image">
-                                  <input type="text" id="langue" name="langue" class="form-control" placeholder="langue">
+                            
+                            
+                                   <label for="photo">Choisissez la langue</label>
+                                   <select name="langue" id="langue">
+                                    <option value="Français">Français</option>
+                                    <option value="Anglais">Anglais</option>
+                                    <option value="Sonrhaï">Sonrhaï</option>
+                                    <option value="Bambara">Bambara</option>
+                                    <option value="Peulh">Peulh</option>
+                                </select>
                                 </div>
         
                             </div>
@@ -196,7 +192,7 @@
            
         </div>
         
-        
+        <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="./js/script.js"></script>        
     </body>
 </html>

@@ -29,24 +29,29 @@
                "langues" : [
                    {
                        "name" : "Anglais",
-                       "flag" : "images/us.png",
-                       "alt" : "drapeau americain"
+                       "flag_us" : "images/us.png",
+                       "alt_us" : "drapeau-Americain"
                    },
                    {
                        "name" : "Français",
-                       "flag" : "images/frflag.png",
-                       "alt": "drapeau Français"
+                       "flag_fr" : "images/frflag.png",
+                       "alt_fr": "drapeau-Français"
                    },
                    {
-                       "name" : "Lingala",
-                       "flag" : "images/cd.png",
-                       "alt" :"drapeau Congolais"
+                       "name" : "Sonrhaï",
+                       "flag_sr" : "images/mali.png",
+                       "alt_sr" :"drapeau-Malien"
                    },
                    {
-                       "name" : "Swahili",
-                       "flag" : "images/cd.png",
-                       "alt" :"drapeau congolais"
-                   }
+                       "name" : "Bambara",
+                       "flag_br" : "images/mali.png",
+                       "alt_br" :"drapeau-Malien"
+                   },
+                   {
+                    "name" : "Peulh",
+                    "flag_p" : "images/mali.png",
+                    "alt_p" :"drapeau-Malien"
+                }
                ],
                "experiences" : [
                    {

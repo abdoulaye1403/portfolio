@@ -15,14 +15,11 @@
 }
 
 body{
-              color: #707070;
-              font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-              /* background-image: url('../images/greyzz.png');   */          
+    color: #707070;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+                        
 }
-/* .container {
-    max-width: 800px;
-    margin: 40px auto;
-} */
+
 
 .header{
     display: inline-block;
@@ -73,19 +70,17 @@ body{
     margin-right: 10px;
 }
 h1,h2{
-               font-family: 'droid_sansregular', 'Arial', sans-serif;
-               
-               
+    font-family: 'droid_sansregular', 'Arial', sans-serif;              
 }
 
 h2{
                
-               color: #6E4A46;
+    color: #6E4A46;
                
 }
 
 li{
-               list-style-type: none;
+    list-style-type: none;
 }
 .contenu h2{
     padding-bottom: 20px;
@@ -94,45 +89,9 @@ li{
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    margin-top: 20px;
-    
-    
-}
-/* .competence-item{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #707070;
-    border-radius: 10px;
-    width: 100%;
-    margin-top: 10px;
-    margin-right: 20px;
-    
-} */
-
-/* .liste-conpetence #color-css{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #707070;
-    border-radius: 10px;
-    width: 45%;
-    margin-top: 10px;
-    margin-right: 20px;
-} */
-/* #color-css .pourcent{
-    font-size: 60px;
-    font-weight: 300;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 20px;    
 }
 
-.github .pourcent{
-    font-size: 60px;
-    font-weight: 300;
-    margin-left: 10px;
-    margin-right: 10px;
-} */
 .competence-item:hover,
 .listes-langues div:hover {
     border: none;
@@ -141,30 +100,29 @@ li{
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 .langues h2{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .langues p{
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .listes-langues{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    
+    grid-template-columns: 30% 30% 30%   
 }
 
 .listes-langues img{
     width: 50%;
-    padding: 7px;
-    
+    padding: 5px;
 }
 .listes-langues div{
     display: flex;
     align-items: center;
-    width: 95%;
+    width: 100%;
     border: 1px solid;
-    padding: 8px;
+    padding: 3px;
+    margin-right: 5px !important;
     border-radius: 7px;
 }
 .experiences h2{

@@ -27,37 +27,27 @@ fetch('js/data.json')
         document.querySelector('.content .hero_github ').textContent = data.profile.content_lien
         document.querySelector('.content .hero_github ').setAttribute('href', data.profile.github)
 
-    // creation de la liste des compétences
-  
-        // list item à construire avec javascript
-        // <div class="skill-item">
-        //     <span>30%</span>
-        //     <div class="skill">
-        //         <h3 class="title">GitHub</h3>
-        //         <p class="description">Gérer les différentes
-        //             versions de mes projets</p>
-        //     </div>
-        // </div>
+    // recuperation de l'image des langues
 
+    var images = []
+    for ( let langue of data.langues){
+        images.push(langue)
 
+    }
+   
         const formSectionCompetence = document.getElementById('form-section-competence')
         const competenceForm = document.getElementById('competenceForm')
         const buttonShowForm = document.getElementById('addButtonCompetence')
 
         let competences = []
 
-        // function showForm(e) {
-        //     formSection.classList.remove('d-none')
-        //     e.classList.add('disabled')
-        // }
-
-        buttonShowForm.addEventListener('click', function handleClick(e) {
+        buttonShowForm.addEventListener('click', function showFormCompetence(e) {
 
             formSectionCompetence.classList.remove('d-none')
                 e.classList.add('disabled')
         });
 
-        function hideForm() {
+        function hideFormC() {
             formSectionCompetence.classList.add('d-none')
             buttonShowForm.classList.remove('disabled')
             competenceForm.reset()
@@ -68,7 +58,7 @@ fetch('js/data.json')
 
             const data = new FormData(competenceForm)
             addCompetence(data)
-            hideForm()
+            hideFormC()
         })
 
         function addCompetence(formData) {
@@ -114,18 +104,13 @@ fetch('js/data.json')
 
         let langues = []
 
-        // function showForm(e) {
-        //     formSection.classList.remove('d-none')
-        //     e.classList.add('disabled')
-        // }
-
-        buttonShowForml.addEventListener('click', function handleClick(e) {
+        buttonShowForml.addEventListener('click', function showFormLangue(e) {
 
             formSectionLangue.classList.remove('d-none')
                 e.classList.add('disabled')
         });
 
-        function hideForm() {
+        function hideFormL() {
             formSectionLangue.classList.add('d-none')
             buttonShowForml.classList.remove('disabled')
             langueForm.reset()
@@ -136,38 +121,78 @@ fetch('js/data.json')
 
             const data = new FormData(langueForm)
             addLangue(data)
-            hideForm()
+            hideFormL()
         })
 
         function addLangue(formData) {
             const langue = {
-                'image' : formData.get('image'),
-                'langue' : formData.get('langue'),
-                
+                'langue' : formData.get('langue'),            
             }
-
             langues.push(langue)
             loadLangues()
         }
-
 
         function loadLangues() {
             let listView = document.getElementById('listes-langues')
             listView.innerHTML = ""
 
-            for (const lang of langues) {
-                let template = `
-                    <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
-                        <img  src"./images/${lang.image}" alt="photo" class="image">
-                        <span class="fs-1">${lang.langue}</span>
-                    </div>
-                </div>
-                `
+            for (const lang of langues){
+                if(lang.langue === 'Français'){
+                    var template = `
+                         <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+                         <img src="${images[1].flag_fr}" alt="">
+                         <span class="fs-1">${lang.langue}</span>
+                         </div>
+                         </div>
+                         `
+                         listView.innerHTML += template
+                }
 
-                listView.innerHTML += template
-            }
+                else if(lang.langue === 'Anglais'){
+                    var template = `
+                         <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+                         <img src="${images[0].flag_us}" alt="">
+                         <span class="fs-1">${lang.langue}</span>
+                         </div>
+                         </div>
+                         `
+                         listView.innerHTML += template
+                }
+
+                else if(lang.langue === 'Sonrhaï'){
+                    var template = `
+                         <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+                         <img src="${images[2].flag_sr}" alt="">
+                         <span class="fs-1">${lang.langue}</span>
+                         </div>
+                         </div>
+                         `
+                         listView.innerHTML += template
+                }
+
+                else if(lang.langue === 'Bambara'){
+                    var template = `
+                         <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+                         <img src="${images[3].flag_br}" alt="">
+                         <span class="fs-1">${lang.langue}</span>
+                         </div>
+                         </div>
+                         `
+                         listView.innerHTML += template
+                }
+
+                else if(lang.langue === 'Peulh'){
+                    var template = `
+                         <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+                         <img src="${images[4].flag_p}" alt="">
+                         <span class="fs-1">${lang.langue}</span>
+                         </div>
+                         </div>
+                         `
+                         listView.innerHTML += template
+                }
+            }                
         }
-
-        
-    });
+}  
+    );
         

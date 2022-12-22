@@ -193,6 +193,62 @@ fetch('js/data.json')
                 }
             }                
         }
+
+    // creation des experiences
+    const formSectionExperience = document.getElementById('form-section-experience')
+    const experienceForm = document.getElementById('experienceForm')
+    const buttonShowFormE = document.getElementById('addButtonExperience')
+
+    let experiences = []
+
+    buttonShowFormE.addEventListener('click', function showFormExperience(e) {
+
+        formSectionExperience.classList.remove('d-none')
+            e.classList.add('disabled')
+    });
+
+    function hideFormE() {
+        formSectionExperience.classList.add('d-none')
+        buttonShowFormE.classList.remove('disabled')
+        experienceForm.reset()
+    }
+
+    experienceForm.addEventListener('submit', function(e) {
+        e.preventDefault()
+
+        const data = new FormData(experienceForm)
+        addExperience(data)
+        hideFormE()
+    })
+
+    function addExperience(formData) {
+        const experience = {
+            'anneeExperience' : formData.get('anneeExperience'),
+            'libeléExperience' : formData.get('libeléExperience'),            
+        }
+        experiences.push(experience)
+        loadExperiences()
+    }
+
+    function loadExperiences() {
+        let listView = document.getElementById('experience-liste')
+        listView.innerHTML = ""
+
+        for (const exp of experiences){
+            
+                var template = `
+                <div class="parcours">                                                      
+                    <div class="entete">
+                        <span class="point"></span>
+                        <span class="ligne"></span>
+                    </div> 
+                    <span class="annee-etudiant">${exp.anneeExperience}:${exp.libeléExperience}</span>      
+                </div>                
+                     `
+                     listView.innerHTML += template
+            }
+        }
+        
 }  
-    );
+    )
         

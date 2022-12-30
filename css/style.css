@@ -471,7 +471,7 @@ li{
     }
     .form-row .nom{
         width: 100%;
-        margin-bottom: 20px;
+        
     }
     .form-option{
         display: flex;
@@ -565,7 +565,7 @@ li{
     }
     .form-row .nom{
         width: 100%;
-        margin-bottom: 20px;
+        
     }
     .form-option{
         display: flex;
@@ -584,6 +584,17 @@ li{
         font-weight: 200;
     }
 }
+
+/* Mobile */
+/* @media (min-width: 0px) and (max-width: 599px)      { ... } */
+/* Tablet */
+/* @media (min-width: 600px) and (max-width: 899px)    { ... } */
+/* Small-desktop */
+/* @media (min-width: 900px) and (max-width: 1199px)   { ... } */
+/* Desktop */
+/* @media (min-width: 1200px) and (max-width: 1439px)  { ... } */
+/* HD */
+/* @media (min-width: 1440px)                          { ... } */
 
 
 
